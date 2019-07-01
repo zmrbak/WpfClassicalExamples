@@ -1,0 +1,27 @@
+﻿<Window x:Class="L005.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L005"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="17*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel >
+            <Button Content="打开Window对话框" Margin="5" Padding="5" Click="Button_Click"/>
+            <Button Content="打开文件对话框" Margin="5" Padding="5" Click="Button_Click_1"/>
+            <Button Content="打开保存对话框" Margin="5" Padding="5" Click="Button_Click_2"/>
+            <Button Content="打开打印对话框" Margin="5" Padding="5" Click="Button_Click_3"/>
+            <Button Content="打开字体对话框" Margin="5" Padding="5" Click="Button_Click_4"/>
+            <Button Content="打开颜色选择对话框" Margin="5" Padding="5" Click="Button_Click_5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" >
+            <ListBox x:Name="lb_DialogResult"/>
+        </StackPanel>
+    </Grid>
+</Window>
