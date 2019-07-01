@@ -1,0 +1,16 @@
+﻿<Window x:Class="L003.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L003"
+        mc:Ignorable="d"
+        Title="第三课" Height="450" Width="800" Icon="t01ff301202a63b4ca5.png" WindowStartupLocation="Manual">
+    <Grid>
+        <Button Content="Button" HorizontalAlignment="Left" Height="75" Margin="210,125,0,0" VerticalAlignment="Top" Width="210" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="65" Margin="510,88,0,0" VerticalAlignment="Top" Width="185" Click="Button_Click_1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="55" Margin="510,200,0,0" VerticalAlignment="Top" Width="185" Click="Button_Click_2"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="530,305,0,0" VerticalAlignment="Top" Width="165" Height="50" Click="Button_Click_3"/>
+
+    </Grid>
+</Window>
