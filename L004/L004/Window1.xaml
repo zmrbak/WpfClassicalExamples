@@ -1,0 +1,23 @@
+﻿<Window x:Class="L004.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L004"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="335*"/>
+            <ColumnDefinition Width="457*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Frame x:Name="frameA" Source="/L004;component/Page1.xaml" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2" Grid.Column="1" />
+        <StackPanel >
+            <Button Content="Page1" Click="Button_Click"/>
+            <Button Content="page2" Click="Button_Click_1"/>
+            <Button Content="Page3" Click="Button_Click_2"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
