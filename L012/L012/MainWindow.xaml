@@ -1,0 +1,17 @@
+﻿<Window x:Class="L012.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L012"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="359">
+    <StackPanel>
+       <TextBox />
+        <TextBox Text="这是默认的信息" />
+        <TextBox Text="这是默认的信息2" Background="#FFB93434" Foreground="#FF69C927" FontFamily="Arial Black" FontSize="24" />
+        <TextBox Text="这是默认的信息3" IsReadOnly="True" />
+        <TextBox Text="这是默认的信息4" IsEnabled="False" />
+        <TextBox Text="这是默认的信息5" AcceptsReturn="True" Height="92" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" SpellCheck.IsEnabled="True" />
+    </StackPanel>
+</Window>
