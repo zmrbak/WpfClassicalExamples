@@ -1,0 +1,23 @@
+﻿<Window x:Class="L011.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L011"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="277" Width="489">
+    <StackPanel>
+        <Label Content="这是一个label控件"/>
+        <Label Content="这是另一个Label控件" Background="#FFDC3939" Foreground="#FF23E23D" FontFamily="Modern No. 20" FontSize="22" />
+        <Label>
+            <StackPanel>
+                <TextBlock Text="测试"/>
+                <Rectangle Width="50" Height="50" Fill="#FF2B9C25"/>
+            </StackPanel>
+        </Label>
+        <Label Content="_UserName" Target="{Binding ElementName=MyUserName, Mode=OneWay}"/>
+        <TextBox x:Name="MyUserName"/>
+        <Label Content="_Password" Target="{Binding ElementName=MyPassword, Mode=OneWay}"/>
+        <TextBox x:Name="MyPassword"/>
+    </StackPanel>
+</Window>
