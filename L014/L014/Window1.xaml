@@ -1,0 +1,36 @@
+﻿<Window x:Class="L014.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L014"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <UniformGrid Margin="0,0,103,102">
+        <Path Stroke="DarkBlue" StrokeThickness="5" Margin="0,0,10,-58" Stretch="Fill">
+            <Path.Data>
+                <PathGeometry>
+                    <PathGeometry.Figures>
+                        <PathFigureCollection>
+                            <PathFigure StartPoint="10,100">
+                                <PathFigure.Segments>
+                                    <PathSegmentCollection>
+                                        <ArcSegment Point="40,80"/>
+                                        <BezierSegment Point1="100,300"
+                                                       Point2="100,-100"
+                                                        Point3="200,150"/>
+                                        <BezierSegment Point1="100,200"
+                                                        Point2="200,-10"
+                                                        Point3=" 100,150"
+                                            />
+                                    </PathSegmentCollection>
+                                </PathFigure.Segments>
+                            </PathFigure>
+                        </PathFigureCollection>
+                    </PathGeometry.Figures>
+                </PathGeometry>
+            </Path.Data>
+            
+        </Path>
+    </UniformGrid>
+</Window>
