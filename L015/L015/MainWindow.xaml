@@ -1,0 +1,24 @@
+﻿<Window x:Class="L015.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L015"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="142" Width="464">
+    <StackPanel Orientation="Horizontal">
+        <Button Content="新建" Width="100" Height="30" Margin="20" ToolTip="新建文件" IsEnabled="False" ToolTipService.ShowOnDisabled="True"/>
+        <Button Content="打开" Width="100" Height="30" Margin="20" ToolTip="打开文件" ToolTipService.ShowDuration="2000" ToolTipService.HorizontalOffset="100"/>
+        <Button Content="保存" Width="100" Height="30" Margin="20" >
+            <Button.ToolTip>
+                <StackPanel>
+                    <TextBlock Text="保存文件" FontWeight="Bold" />
+                    <TextBlock Text="点击这个按钮，保存这个文件"/>
+                    <Border BorderBrush="Silver" BorderThickness="0,1,0,0" Margin="0,4"/>
+                    <TextBlock Text="按F1获取帮助信息(F1)" FontStyle="Italic"/>
+
+                </StackPanel>
+            </Button.ToolTip>
+        </Button>
+    </StackPanel>
+</Window>
