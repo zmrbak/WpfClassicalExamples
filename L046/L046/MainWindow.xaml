@@ -1,0 +1,27 @@
+﻿<Window x:Class="L046.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L046"
+        mc:Ignorable="d"
+        Name="window"
+        Title="MainWindow" Height="307" Width="459">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+            <TextBlock Text="筛选内容:"/>
+            <TextBox Width="100" Name="searchBox" TextChanged="SearchBox_TextChanged"/>
+        </StackPanel>
+        <DataGrid x:Name="dataGrid" ItemsSource="{Binding Employees, ElementName=window}"
+                   AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="EMP_ID" Binding="{Binding ID}"/>
+                <DataGridTextColumn Header="FirstName" Binding="{Binding FirstName}"/>
+                <DataGridTextColumn Header="LastName" Binding="{Binding LastName}"/>
+                <DataGridTextColumn Header="Department" Binding="{Binding Department}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</Window>
