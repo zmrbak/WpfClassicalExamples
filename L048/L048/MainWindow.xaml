@@ -1,0 +1,19 @@
+﻿<Window x:Class="L048.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L048"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="242" Width="634">
+    <Window.Resources>
+        <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+    </Window.Resources>
+    <Grid>
+        <Label Content="Label" HorizontalAlignment="Left" Height="140"
+               Margin="190,45,0,0" VerticalAlignment="Top" Width="395" Background="#FFBD7272" 
+               Visibility="{Binding IsChecked, ElementName=checkBox,Converter={StaticResource BoolToVisibilityConverter},ConverterParameter=inverse}"/>
+        <CheckBox x:Name="checkBox" Content="CheckBox" HorizontalAlignment="Left" Margin="60,100,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
