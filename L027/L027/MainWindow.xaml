@@ -1,0 +1,18 @@
+﻿<Window x:Class="L027.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L027"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <UniformGrid  Columns="4" FirstColumn="1" FlowDirection="RightToLeft">
+        <Label Content="单元格 1" Background="Red"/>
+        <Label Content="单元格 2" Background="Green"/>
+        <Label Content="单元格 3" Background="Blue"/>
+        <Label Content="单元格 4" Background="Yellow"/>
+        <Label Content="单元格 5" Background="Black"/>
+        <Label Content="单元格 6" Background="Silver"/>
+        <Label Content="单元格 7" Background="DarkBlue"/>
+    </UniformGrid>
+</Window>
