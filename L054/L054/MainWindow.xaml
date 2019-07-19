@@ -1,0 +1,23 @@
+﻿<Window x:Class="L054.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L054"
+        mc:Ignorable="d"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock Text="悬停鼠标，放大字体" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <i:Interaction.Behaviors>
+                <local:GrowTextBehavior GrowBySize="10"/>
+            </i:Interaction.Behaviors>
+        </TextBlock>
+
+        <Label Content="悬停鼠标，放大字体" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <i:Interaction.Behaviors>
+                <local:GrowTextBehavior1 GrowBySize="10"/>
+            </i:Interaction.Behaviors>
+        </Label>
+    </StackPanel>
+</Window>
