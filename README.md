@@ -19,6 +19,6 @@ CSDN：<a href="http://t.cn/AiO3007U">http://t.cn/AiO3007U</a><br>
 QQ群：831482711
 
 # 学员评价
-<img href="https://github.com/zmrbak/WpfClassicalExamples/blob/master/L000%E5%AD%A6%E5%91%98%E8%AF%84%E4%BB%B7/IMG_20190720_071849.jpg?raw=true"/>
-<img href="https://github.com/zmrbak/WpfClassicalExamples/blob/master/L000%E5%AD%A6%E5%91%98%E8%AF%84%E4%BB%B7/Screenshot_2019-07-20-07-22-42.png?raw=true"/>
-<img href="https://github.com/zmrbak/WpfClassicalExamples/blob/master/L000%E5%AD%A6%E5%91%98%E8%AF%84%E4%BB%B7/Screenshot_2019-07-20-07-24-56.png?raw=true"/>
+<img href="blob/master/L000%E5%AD%A6%E5%91%98%E8%AF%84%E4%BB%B7/IMG_20190720_071849.jpg?raw=true"/>
+<img href="blob/master/L000%E5%AD%A6%E5%91%98%E8%AF%84%E4%BB%B7/Screenshot_2019-07-20-07-22-42.png?raw=true"/>
+<img href="blob/master/L000%E5%AD%A6%E5%91%98%E8%AF%84%E4%BB%B7/Screenshot_2019-07-20-07-24-56.png?raw=true"/>
