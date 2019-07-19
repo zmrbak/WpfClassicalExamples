@@ -1,0 +1,24 @@
+﻿<Window x:Class="L041.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L041"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="152" Width="494">
+    <StackPanel>
+        <TextBlock Margin="20">
+            <Run Text="{Binding Name}"/>
+            <Run Text="Bolg at:"/>
+            <Hyperlink NavigateUri="{Binding Blog}" >
+                <Run Text="{Binding Blog}"/>
+            </Hyperlink>
+            <Run Text="经验值:"/>
+            <Run Text="{Binding Experience}"/>
+        </TextBlock>
+        <StackPanel>
+            <TextBlock> 请输入经验值：</TextBlock>
+            <TextBox Width="50" Text="{Binding  Experience,Mode=TwoWay}"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
