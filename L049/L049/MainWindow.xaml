@@ -1,0 +1,32 @@
+﻿<Window x:Class="L049.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L049"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="252" Width="664">
+    <Window.Resources>
+        <local:FullNameConverter x:Key="FullNameConverter"/>
+    </Window.Resources>
+    <Grid>
+        <Label Content="FirstName" HorizontalAlignment="Left" Margin="75,50,0,0" VerticalAlignment="Top"/>
+        <Label Content="MiddleName" HorizontalAlignment="Left" Margin="250,58,0,0" VerticalAlignment="Top"/>
+        <Label Content="LastName" HorizontalAlignment="Left" Margin="432,53,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_FirstName" HorizontalAlignment="Left" Height="23" Margin="75,83,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_MiddleName" HorizontalAlignment="Left" Height="23" Margin="249,81,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox  x:Name="tb_LastName" HorizontalAlignment="Left" Height="23" Margin="432,83,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="FullName" HorizontalAlignment="Left" Margin="75,127,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_FullName" HorizontalAlignment="Left" Height="23" Margin="75,160,0,0" TextWrapping="Wrap" 
+                 VerticalAlignment="Top" Width="545">
+            <TextBox.Text>
+                <MultiBinding Converter="{StaticResource FullNameConverter}">
+                    <Binding ElementName="tb_FirstName" Path="Text" Mode="TwoWay"/>
+                    <Binding ElementName="tb_MiddleName" Path="Text" Mode="TwoWay"/>
+                    <Binding ElementName="tb_LastName" Path="Text" Mode="TwoWay"/>
+                </MultiBinding>
+            </TextBox.Text>
+        </TextBox>
+
+    </Grid>
+</Window>
