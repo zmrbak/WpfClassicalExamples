@@ -1,8 +1,11 @@
 # 云课堂《WPF经典编程实例》示例代码
 
-网易云课堂：<a href="http://t.cn/AiO3peux">http://t.cn/AiO3peux </a><br>
-CSDN：<a href="http://t.cn/AiO3007U">http://t.cn/AiO3007U</a><br>
+网易云课堂：<a href="http://t.cn/AiO3peux">http://t.cn/AiO3peux </a>
+<br>
+CSDN：<a href="http://t.cn/AiO3007U">http://t.cn/AiO3007U</a>
+<br>
 51CTO：<a href="https://edu.51cto.com/sd/c891d">https://edu.51cto.com/sd/c891d</a>
+<br>
 腾讯课堂：暂未上架<br>
 淘宝教育：暂未上架<br>
 
