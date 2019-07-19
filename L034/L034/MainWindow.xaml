@@ -1,0 +1,12 @@
+﻿<Window x:Class="L034.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L034"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Viewbox>
+        <TextBlock Text="这是ViewBox中的一行文本" Background="#FF60C1A2" Foreground="#FF12259B" Margin="5" Padding="5"/>
+    </Viewbox>
+</Window>
