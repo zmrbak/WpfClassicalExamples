@@ -1,0 +1,16 @@
+﻿<Window x:Class="L020.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L020"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Slider x:Name="slider" Maximum="100" SmallChange="1" LargeChange="5" Value="25" AutoToolTipPlacement="BottomRight" TickPlacement="Both" TickFrequency="10" SelectionEnd="80" SelectionStart="20" IsSnapToTickEnabled="True" IsSelectionRangeEnabled="True"  />
+        <TextBlock>
+            <Run>滑块的值：</Run>
+            <Run Text="{Binding Value, ElementName=slider}"/>
+        </TextBlock>
+    </StackPanel>
+</Window>
