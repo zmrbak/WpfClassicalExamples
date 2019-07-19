@@ -1,0 +1,17 @@
+﻿<Window x:Class="L033.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L033"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <Label Content="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="72" FontWeight="Bold" Background="#FFA0B92E" Margin="5" DockPanel.Dock="Right"/>
+        <Label Content="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="72" FontWeight="Bold" Background="#FFE64622" Margin="5" DockPanel.Dock="Top"/>
+        <Label Content="3" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="72" FontWeight="Bold" Background="#FF2246E6" Margin="5" DockPanel.Dock="Bottom"/>
+        <Label Content="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="72" FontWeight="Bold" Background="#FFE622C2" Margin="5"/>
+        <Label Content="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="72" FontWeight="Bold" Background="#FF22E63D" Margin="5"/>
+
+    </DockPanel>
+</Window>
