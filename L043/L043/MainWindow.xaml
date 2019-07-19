@@ -1,0 +1,23 @@
+﻿<Window x:Class="L043.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L043"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock Margin="10"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" 
+                   FontSize="{Binding Value, ElementName=slider}"
+                   >
+            <Run>字体大小：</Run>
+            <Run Text="{Binding Value, ElementName=slider}"/>
+        </TextBlock>
+        <Slider x:Name="slider" Minimum="10" Maximum="40" Value="20"
+                LargeChange="5"
+                Margin="10"
+                />
+    </StackPanel>
+</Window>
