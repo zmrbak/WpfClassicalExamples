@@ -1,0 +1,20 @@
+﻿<Window x:Class="L028.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L028"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="342" Width="574">
+    <WrapPanel Orientation="Vertical" >
+        <Button Content="按钮 1" Margin="20" Width="100" Height="30"/>
+        <Button Content="按钮 2" Margin="20" Width="200" Height="30"/>
+        <Button Content="按钮 3" Margin="20" Width="100" Height="30"/>
+        <Button Content="按钮 4" Margin="20" Width="100" Height="30"/>
+        <Button Content="按钮 5" Margin="20" Width="100" Height="30"/>
+        <Button Content="按钮 6" Margin="20" Width="100" Height="30"/>
+        <Button Content="按钮 7" Margin="20" Width="100" Height="30"/>
+        <Button Content="按钮 8" Margin="20" Width="100" Height="30"/>
+        <Button Content="按钮 9" Margin="20" Width="100" Height="30"/>
+    </WrapPanel>
+</Window>
