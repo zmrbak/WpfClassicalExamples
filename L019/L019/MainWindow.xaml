@@ -1,0 +1,30 @@
+﻿<Window x:Class="L019.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L019"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="202" Width="369">
+    <StackPanel>
+        <StackPanel>
+            <TextBlock Text="显示20%"/>
+            <ProgressBar x:Name="pb1" Minimum="0" Maximum="100" Value="20" Height="25"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="显示70%"/>
+            <ProgressBar x:Name="pb2" Minimum="0" Maximum="100" Value="70" Height="25"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="不确定的"/>
+            <ProgressBar x:Name="pb3" Minimum="0" Maximum="100" IsIndeterminate="True" Height="25"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="增加10" Margin="10" Padding="10" Click="Button_Click"/>
+            <Button Content="减少10" Margin="10" Padding="10" Click="Button_Click_1"/>
+            <Button Content="开始" Margin="10" Padding="10" Click="Button_Click_2"/>
+            <Button Content="结束" Margin="10" Padding="10" Click="Button_Click_3"/>
+
+        </StackPanel>
+    </StackPanel>
+</Window>
