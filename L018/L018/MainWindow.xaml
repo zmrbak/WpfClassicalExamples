@@ -1,0 +1,30 @@
+﻿<Window x:Class="L018.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L018"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="222" Width="339">
+    <StackPanel>
+        <StackPanel>
+            <TextBlock Text="第一组"/>
+            <RadioButton x:Name="rb2" Content="RadioButton1" IsThreeState="True" IsChecked="{x:Null}" GroupName="G1"/>
+            <RadioButton Content="RadioButton2"/>
+            <RadioButton x:Name="rb1" Content="RadioButton3"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="第二组"/>
+            <RadioButton Content="RadioButton4"  GroupName="G1"/>
+            <RadioButton Content="RadioButton5" IsChecked="True"/>
+            <RadioButton Content="RadioButton6"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="第三组"/>
+            <CheckBox Name="cb2" Content="CheckBox" IsThreeState="True" IsChecked="{x:Null}"/>
+            <CheckBox Content="CheckBox" />
+            <CheckBox x:Name="cb1" Content="CheckBox" />
+        </StackPanel>
+        <Button Content="设置选中" Click="Button_Click"/>
+    </StackPanel>
+</Window>
