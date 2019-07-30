@@ -1,0 +1,14 @@
+﻿<Window x:Class="L066.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L066"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="350" Source="Image/imag1.jpg"/>
+        <Image HorizontalAlignment="Left" Height="399" Margin="385,10,0,0" VerticalAlignment="Top" Width="350" Source="Image/imag2.jpg"/>
+
+    </Grid>
+</Window>
