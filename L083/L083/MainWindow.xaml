@@ -1,0 +1,66 @@
+﻿<Window x:Class="L083.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L083"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Canvas>
+            <Ellipse x:Name="circle" Fill="OrangeRed" Width="80" Height="80" 
+                     Canvas.Left="150" Canvas.Top="80"/>
+        </Canvas>
+        <StackPanel Grid.Column="1" Margin="10">
+            <RadioButton Content="BackEase  - EaseIn" Margin="5">
+                <RadioButton.Triggers>
+                    <EventTrigger RoutedEvent="RadioButton.Checked">
+                        <BeginStoryboard>
+                            <Storyboard AutoReverse="True">
+                                <DoubleAnimation Storyboard.TargetName="circle" Storyboard.TargetProperty="(Canvas.Left)" To="350">
+                                    <DoubleAnimation.EasingFunction>
+                                        <BackEase EasingMode="EaseIn" Amplitude="0.3"/>
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </RadioButton.Triggers>
+            </RadioButton>
+            <RadioButton Content="BackEase  - EaseInOut" Margin="5">
+                <RadioButton.Triggers>
+                    <EventTrigger RoutedEvent="RadioButton.Checked">
+                        <BeginStoryboard>
+                            <Storyboard AutoReverse="True">
+                                <DoubleAnimation Storyboard.TargetName="circle" Storyboard.TargetProperty="(Canvas.Left)" To="350">
+                                    <DoubleAnimation.EasingFunction>
+                                        <BackEase EasingMode="EaseInOut" Amplitude="0.3"/>
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </RadioButton.Triggers>
+            </RadioButton>
+            <RadioButton Content="BounceEase  - EaseOut" Margin="5">
+                <RadioButton.Triggers>
+                    <EventTrigger RoutedEvent="RadioButton.Checked">
+                        <BeginStoryboard>
+                            <Storyboard AutoReverse="True">
+                                <DoubleAnimation Storyboard.TargetName="circle" Storyboard.TargetProperty="(Canvas.Left)" To="350">
+                                    <DoubleAnimation.EasingFunction>
+                                        <BounceEase EasingMode="EaseOut" Bounces="2" Bounciness="2"/>
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </RadioButton.Triggers>
+            </RadioButton>
+        </StackPanel>
+    </Grid>
+</Window>
