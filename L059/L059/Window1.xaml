@@ -1,0 +1,15 @@
+﻿<Window x:Class="L059.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L059"
+        mc:Ignorable="d"
+        Title="Window1" Height="262" Width="319">
+    <StackPanel Margin="20">
+        <Button Content="BaseStyle"/>
+        <Button Content="红" />
+        <Button Content="绿" />
+        <Button Content="蓝" />
+    </StackPanel>
+</Window>
