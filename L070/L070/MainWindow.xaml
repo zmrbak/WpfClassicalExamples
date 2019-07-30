@@ -1,0 +1,26 @@
+﻿<Window x:Class="L070.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L070"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="222" Width="319">
+    <Window.Resources>
+        <LinearGradientBrush x:Key="myLinearGradientBrush">
+            <GradientStop Offset="0" Color="LightBlue"/>
+            <GradientStop Offset="0.5" Color="Yellow"/>
+            <GradientStop Offset="1" Color="Green"/>
+        </LinearGradientBrush>
+    </Window.Resources>
+    <StackPanel Orientation="Horizontal">
+        <Border Height="150" Width="150" Margin="10"
+                Background="{DynamicResource myLinearGradientBrush}"
+                />
+        <StackPanel Margin="10">
+            <RadioButton Content="红色" Margin="10" Checked="RadioButton_Checked_Red"/>
+            <RadioButton Content="绿色" Margin="10" Checked="RadioButton_Checked_Green"/>
+            <RadioButton Content="蓝色" Margin="10" Checked="RadioButton_Checked_Blue"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
