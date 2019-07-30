@@ -1,0 +1,42 @@
+﻿<Window x:Class="L081.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L081"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Storyboard x:Key="Storyboard1">
+            <DoubleAnimationUsingPath Duration="0:0:2" Source="X" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ellipse" RepeatBehavior="Forever">
+                <DoubleAnimationUsingPath.PathGeometry>
+                    <PathGeometry Figures="M103.57836,28.208862 L258.25154,21.058998 L477.70975,29.926016 L541.99549,123.02986 L510.96067,213.91605 L402.33994,169.58139 L402.33994,222.78338 L346.92121,256.03499 L180.66499,256.03499 L187.31524,178.44835 L103.07876,127.46313 L38.793499,103.07889 z"/>
+                </DoubleAnimationUsingPath.PathGeometry>
+            </DoubleAnimationUsingPath>
+            <DoubleAnimationUsingPath Duration="0:0:2" Source="Y" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ellipse" RepeatBehavior="Forever">
+                <DoubleAnimationUsingPath.PathGeometry>
+                    <PathGeometry Figures="M103.57836,28.208862 L258.25154,21.058998 L477.70975,29.926016 L541.99549,123.02986 L510.96067,213.91605 L402.33994,169.58139 L402.33994,222.78338 L346.92121,256.03499 L180.66499,256.03499 L187.31524,178.44835 L103.07876,127.46313 L38.793499,103.07889 z"/>
+                </DoubleAnimationUsingPath.PathGeometry>
+            </DoubleAnimationUsingPath>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+        <Path Data="M168.9064,92.704433 L323.57922,85.554624 543.03692,94.421574 607.3225,187.52469 576.28775,278.41018 467.66728,234.07587 467.66728,287.27745 412.24868,320.5288 245.99286,320.5288 252.64309,242.94276 168.40681,191.95793 104.1217,167.57388 z" HorizontalAlignment="Left" Height="235.976" Margin="104.121,85.554,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="504.202"/>
+        <Ellipse x:Name="ellipse" Fill="#FFD30FC1" HorizontalAlignment="Left" Height="33.252" Margin="49.202,48.369,0,0" Stroke="Black" VerticalAlignment="Top" Width="33.251" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform />
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+
+    </Grid>
+</Window>
