@@ -1,0 +1,44 @@
+﻿<Window x:Class="L074.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L074.Views"
+        mc:Ignorable="d"
+        xmlns:viewmodels="clr-namespace:L074.ViewModels"
+        xmlns:commands="clr-namespace:L074.Commands"
+        Title="MainWindow" Height="232" Width="384">
+    <Window.Resources>
+        <viewmodels:MainWindowViewModel x:Key="ViewModel"/>
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static commands:RoutedCommnads.AddCommnad}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+    </Window.CommandBindings>
+    <DockPanel Margin="10" DataContext="{StaticResource ViewModel}">
+        <StackPanel Orientation="Vertical" DockPanel.Dock="Left">
+            <ListBox Width="200" Height="150" ItemsSource="{Binding UserCollection}" SelectedItem="{Binding SelectedUser}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock>
+                            <Run Text="{Binding FirstName}"/>
+                            <Run Text="{Binding LastName}"/>
+                        </TextBlock>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <TextBlock DataContext="{Binding SelectedUser}">
+                <Run Text="选择的用户:"/>
+                <Run Text="{Binding FirstName}"/>
+                <Run Text="{Binding LastName}"/>
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Margin="5 0" DockPanel.Dock="Right" DataContext="{Binding NewUserDedail}">
+            <TextBlock Text="FirstName"/>
+            <TextBox Text="{Binding FirstName,Mode=TwoWay}"/>
+            <TextBlock Text="LastName"/>
+            <TextBox Text="{Binding LastName,Mode=TwoWay}"/>
+            <Button Content="添加用户" Margin="0 4" Command="{x:Static commands:RoutedCommnads.AddCommnad}"/>
+
+        </StackPanel>
+    </DockPanel>
+</Window>
