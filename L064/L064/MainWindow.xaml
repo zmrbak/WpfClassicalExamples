@@ -1,0 +1,32 @@
+﻿<Window x:Class="L064.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L064"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="152" Width="207">
+    <Window.Resources>
+        
+    </Window.Resources>
+    <StackPanel Margin="10" HorizontalAlignment="Center">
+        <CheckBox x:Name="cb1" Content="许可协议A"/>
+        <CheckBox x:Name="cb2" Content="许可协议B"/>
+        <Button Content="注册" Click="Button_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="IsEnabled" Value="False"/>
+                    <Style.Triggers>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding ElementName=cb1,Path=IsChecked}" Value="True"/>
+                                <Condition Binding="{Binding ElementName=cb2,Path=IsChecked}" Value="True"/>
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="IsEnabled" Value="True"/>
+                        </MultiDataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+    </StackPanel>
+</Window>
