@@ -1,0 +1,48 @@
+﻿<Window x:Class="L057.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L057"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="227" Width="304">
+    <Window.Resources>
+        <Style x:Key="ButtonBaseStyle" TargetType="{x:Type Button}">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Padding" Value="8 0"/>
+            <Setter Property="MinWidth" Value="180"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+        <Style x:Key="LabelBaseStyle" TargetType="{x:Type Label}">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Padding" Value="8 0"/>
+            <Setter Property="MinWidth" Value="180"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Background" Value="OliveDrab"/>
+        </Style>
+        <!--<Style x:Key="ButtonBaseStyle">
+            <Setter Property="Button.Height" Value="30"/>
+            <Setter Property="Button.FontSize" Value="18"/>
+            <Setter Property="Button.Padding" Value="8 0"/>
+            <Setter Property="Button.MinWidth" Value="180"/>
+            <Setter Property="Button.HorizontalAlignment" Value="Center"/>
+            <Setter Property="Button.Margin" Value="5"/>
+            <Setter Property="Button.Cursor" Value="Hand"/>
+            <Setter Property="Button.BorderThickness" Value="2"/>
+            <Setter Property="Label.Background" Value="red"/>
+        </Style>-->
+    </Window.Resources>
+    <StackPanel Margin="20">
+        <Button Content="点击这里" Style="{StaticResource ButtonBaseStyle}"/>
+        <Button  Content="点击这里" Style="{StaticResource ButtonBaseStyle}"/>
+        <Label Content="测试"  Background="#FF1D2464" Style="{StaticResource LabelBaseStyle}" />
+    </StackPanel>
+</Window>
