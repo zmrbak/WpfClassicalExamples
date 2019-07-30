@@ -1,0 +1,17 @@
+﻿<Application x:Class="L071.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:L071"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <SolidColorBrush x:Key="Red" Color="Red"/>
+            <SolidColorBrush x:Key="Green" Color="Green"/>
+            <SolidColorBrush x:Key="Blue" Color="Blue"/>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/SolidBrushes.xaml"/>
+                <ResourceDictionary Source="Themes/Brushes.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
