@@ -1,0 +1,32 @@
+﻿<Window x:Class="L077.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L077"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Orientation="Horizontal">
+        <Grid Visibility="Visible">
+            <Image Source="Images/imag4.jpg" Width="300" Opacity="0.2"/>
+            <Image Source="Images/imag4.jpg" Width="300" Opacity="1">
+                <Image.RenderTransform>
+                    <SkewTransform AngleX="50" AngleY="5"/>
+                </Image.RenderTransform>
+            </Image>
+        </Grid>
+        <Grid>
+            <Image Source="Images/imag4.jpg" Width="300" Opacity="0.2">
+                <Image.RenderTransform>
+                    <SkewTransform AngleX="30" AngleY="5" CenterX="0" CenterY="0"/>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="Images/imag4.jpg" Width="300" Opacity="1">
+                <Image.RenderTransform>
+                    <SkewTransform AngleX="30" AngleY="5" CenterX="200" CenterY="-100"/>
+                </Image.RenderTransform>
+            </Image>
+
+        </Grid>
+    </StackPanel>
+</Window>
