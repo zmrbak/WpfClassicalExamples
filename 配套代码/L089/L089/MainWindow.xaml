@@ -1,0 +1,36 @@
+﻿<Window x:Class="L089.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L089"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="227" Width="454">
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Height" Value="30"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="30"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="用户名：" Grid.Row="0" Margin="5"/>
+        <TextBlock Text="密码：" Grid.Row="2" Margin="5"/>
+        <TextBox x:Name="userName" Grid.Row="1" Margin="5"/>
+        <TextBox x:Name="password" Grid.Row="3" Margin="5"/>
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5">
+            <Button Content="登录"/>
+            <Button Content="取消"/>
+        </StackPanel>
+    </Grid>
+</Window>
