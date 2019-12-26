@@ -1,15 +1,9 @@
-# 云课堂《WPF经典编程实例》示例代码
+# 腾讯课堂《WPF经典编程实例》示例代码
 
-网易云课堂：<a href="http://t.cn/AiO3peux">http://t.cn/AiO3peux </a>
-<br>
-CSDN：<a href="http://t.cn/AiO3007U">http://t.cn/AiO3007U</a>
-<br>
-51CTO：<a href="https://edu.51cto.com/sd/c891d">https://edu.51cto.com/sd/c891d</a>
-<br>
-腾讯课堂：暂未上架<br>
-淘宝教育：暂未上架<br>
+腾讯课堂：<a href="https://ke.qq.com/course/431080">https://ke.qq.com/course/431080</a><br/>
 
 # 课程简介
+
 本课程通过100个实战案例，详细介绍了在WPF编程中用到的各种技巧，帮你进一步掌握WPF这种优秀的编程框架。
 <br>
 也许你曾经为了一个WPF又酷又炫的功能，查遍资料却终无所获，**无奈遗憾放弃。
@@ -19,7 +13,11 @@ CSDN：<a href="http://t.cn/AiO3007U">http://t.cn/AiO3007U</a>
 如果你是WPF的开发人员、或者是WPF的爱好者，学习这门课，将为你节省大量自我探索的时间成本。
 
 # 交流
-QQ群：831482711
+
+学员QQ群：831482711  点击链接加入群聊【.NET/C#/WPF/Blend学员交流】：https://jq.qq.com/?_wv=1027&k=5a5hYLE
+
+游客QQ群：722055567  点击链接加入群聊【.NET/C#/WPF/Blend交流群】：https://jq.qq.com/?_wv=1027&k=5YwoGcw
+
 
 # 学员评价
 
